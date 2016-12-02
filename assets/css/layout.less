@@ -1,0 +1,109 @@
+@import './base.less';
+
+*{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+    background: @bg-color;
+    min-width: 960px;
+}
+ul li{
+    list-style: none;
+}
+h1, h2, h3, h4 ,h5 {
+    margin: 0;
+}
+a{
+	color: #333;
+	border: none;
+	outline: 0;
+	text-decoration: none;
+}
+a:link,a:visited,a:hover,a:active{
+	text-decoration:none;
+}
+a:focus{
+	outline:0;
+}
+/** 通用头部 **/
+.header{
+    height: 73px;
+    .logo{
+        width: 220px;
+        background: #e39057;
+        height: 100%;
+        line-height: 73px;
+        text-align: center;
+    }
+    .tabs{
+        margin-left: 200px;
+        height: 100%;
+        background: #4c4d5b;
+        li{
+            padding-top: 20px;
+            margin-left: 20px;
+            display: inline-block;
+            a.on{
+                color: orange;
+            }
+        }
+    }
+}
+/** 通用左侧边栏 **/
+.aside{
+    height: 500px;
+    background: #fff;
+    width: 220px;
+    ul{
+        li{
+            border-bottom: 1px solid @bd-color;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+}
+/** 通用主内容区 **/
+.main-cont{
+    height: 500px;
+    margin-left: 220px;
+    overflow: hidden;
+}
+/** 通用底部 **/
+.footer{
+    height: 50px;
+    background: #dadada;
+    line-height: 50px;
+    text-align: center;
+}
+/** 通用面板 **/
+.panel{
+    background: #fff;
+    margin: 20px;
+    border: 1px solid #e7e7e9;
+}
+
+/** 通用浮动左 **/
+.col-l{
+    float: left;
+    display: inline;
+}
+/** 通用浮动右 **/
+.col-r{
+    float: right;
+    display: inline;
+}
+/** 通用清除浮动 **/
+.clearfix{
+    &:after{
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+/** 通用vue导航选中颜色 **/
+.router-link-active{
+    color: orange;
+}

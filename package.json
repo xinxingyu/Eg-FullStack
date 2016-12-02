@@ -1,0 +1,70 @@
+{
+  "name": "eg-fullstack",
+  "version": "1.0.0",
+  "description": "'FullStack' project using 'webpack+node+vue'",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=local DEBUG=eagle node --harmony app.js",
+	"app": "NODE_ENV=production node --harmony app.js",
+    "build": "node build/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xinxingyu/Eg-FullStack.git"
+  },
+  "keywords": [
+    "fullstack",
+	"vue",
+	"vuex",
+	"webpack",
+	"node"
+  ],
+  "author": "xinxingyu",
+  "license": "ISC",
+  "dependencies": {
+    "echarts": "^3.3.2",
+    "vue": "^2.1.3",
+    "vue-router": "^2.0.3",
+    "vuex": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-runtime": "^6.18.0",
+    "child_process": "^1.0.2",
+    "css-loader": "^0.26.0",
+    "ejs-loader": "^0.3.0",
+    "eventsource-polyfill": "^0.9.6",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.9.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^2.3.0",
+    "koa-ejs": "^3.0.0",
+    "koa-onerror": "^3.0.1",
+    "koa-router": "^3.4.0",
+    "koa-static": "^2.0.0",
+    "koa-static-cache": "^3.1.7",
+    "koa-validator": "^0.6.4",
+    "koa-webpack-dev-middleware": "^1.3.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "mini-logger": "^1.1.1",
+    "ora": "^0.3.0",
+    "shelljs": "^0.7.5",
+    "style-loader": "^0.13.1",
+    "underscore": "^1.8.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^10.0.1",
+    "vue-template-compiler": "^2.1.3",
+    "webpack": "^1.13.2",
+    "webpack-hot-middleware": "^2.13.2",
+    "webpack-merge": "^1.0.2",
+    "xtemplate": "^4.6.0",
+    "xtpl": "^3.3.0"
+  }
+}

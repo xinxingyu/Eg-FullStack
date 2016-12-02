@@ -1,0 +1,14 @@
+<div id='vue-box'>
+    <div class="aside col-l">
+        <ul>
+            <li><router-link to="/a">实时路况</router-link></li>
+            <li><router-link to="/b">历史路况</router-link></li>
+            <li><router-link to="/c">路况分析</router-link></li>
+        </ul>
+    </div>
+    <div class="main-cont">
+        <keep-alive>
+            <router-view></router-view>
+        </keep-alive>
+    </div>
+</div>
